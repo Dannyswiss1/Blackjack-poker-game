@@ -38,7 +38,10 @@ This project is a basic implementation of the Blackjack card game. It allows pla
 5. If your sum exceeds 21, you lose the game.
 
 ## Screenshots
-![Alt text](/screenshot)
+![Screenshot from 2023-08-29 07-18-25](https://github.com/Dannyswiss1/Blackjack-poker-game/assets/137540755/a9df904a-fee5-4296-b045-fa8afb87bc61)
+![Screenshot from 2023-08-29 07-17-56](https://github.com/Dannyswiss1/Blackjack-poker-game/assets/137540755/2327a540-9237-46cb-acaa-b4b1bab8f917)
+
+
 
 ## Technologies Used
 
