@@ -1,0 +1,377 @@
+// ex 1
+
+// let firstCard = 6
+// let secondCard = 8
+// let sum = firstCard + secondCard
+// alert(sum)
+
+// if (sum < 21) {
+//     console.log("do you want to draw a new card?")
+// }else if (sum === 21) {
+//     console.log("wohoo! you've got a blackjack")
+// } else (sum > 21) {
+//     console.log("you're out of the game")
+// }
+
+// ex 2
+
+// let age = 22
+
+// if (age < 21) {
+//     console.log("you cannot enter the club")
+// } else if (age > 21) {
+//     console.log("welcome")
+// }
+
+// ex 3
+
+// let age = 100
+
+// if (age < 100) {
+//     console.log("not eligible")
+// }else if (age === 100) {
+//     console.log("here is your birthday card from the king")
+// }else  {
+//     console.log("not eligible, you have already gotten one")
+// }
+
+// ex 4
+// let firstCard = 10
+// let secondCard = 7
+// let sum = firstCard + secondCard + 4 // 21
+// let hasBlackJack = false
+// let isAlive = true
+
+// if (sum <= 20) {
+//     console.log("do you want to draw a new card")
+// } else if (sum === 21) {
+//     console.log("wohoo! you've got blackjack")
+//     hasBlackJack = true
+// }else {
+//     console.log("you're out of the game")
+//     isAlive = false
+// }
+
+// console.log(isAlive)
+// console.log(hasBlackJack)
+
+// ex 5
+
+// console.log(4 === 3) // false
+// console.log(5 > 2) // true
+// console.log(12 > 12) // false
+// console.log(3 < 0) // false
+// console.log(3 >= 3) // true
+// console.log(11 <= 11) //true
+// console.log(3 <= 2) // false
+
+// ex 6
+
+// message = "wohoo! you've got blackjack"
+// console.log(message)
+
+ /* let firstCard = 10;
+let secondCard = 7;
+let cards = [firstCard, secondCard]; // array - ordered list of items
+let sum = firstCard + secondCard; // 21
+let hasBlackJack = false;
+let isAlive = true;
+let message = "";
+
+let messageEl = document.getElementById("message-el");
+// console.log(messageEl)
+let sumEl = document.getElementById("sum-el");
+// console.log(sumEl)
+let cardsEl = document.getElementById("cards-el"); */
+// console.log(cardsEl)
+
+ /* since the startGame button only renders the game, 
+ the original startGame function will be renamed to
+ to renderGame and thus a new function will be created
+ and named startGame, it'll call the renderGame function */
+
+ /*function startGame() {
+  renderGame();
+}
+
+function renderGame() {
+  cardsEl.textContent = "Cards: " //+ cards[0] + " " + cards[1];
+  // Create a for loop that renders out all the cards instead of just two
+  for (let i = 0; i < cards.length; i++) {
+    cardsEl.textContent += cards[i] + " "
+  }
+  sumEl.textContent = "Sum: " + sum;
+  if (sum <= 20) {
+    message = "Want to draw a new card?";
+  } else if (sum === 21) {
+    message = "You've got blackjack";
+    hasBlackJack = true;
+  } else {
+    message = "You're out of the game";
+    isAlive = false;
+  }
+
+  messageEl.textContent = message;
+  console.log(message);
+}
+
+function newCard() {
+  console.log("Drawing a new card from the deck!");
+  // 1. Create a card variable and hard code its vaalue to a number btw (2-11)
+  let card = 4;
+  // 2. Add the new card to the sum variable
+  sum += card;
+  cards.push(card)
+  console.log(cards)
+  // 3. Call startGame()
+  renderGame();
+} 
+
+/* let myExperience = ['sales executive', 'teacher', 'manager at food and daily needs']
+let myData = ['Dannyswiss', 31, true]
+
+let messages = [
+  "Hey, how's it going?",        
+  "I'm great, thank you! How about you?",
+  "All good. Been working on my portfolio lately."
+]
+
+let newMessages = 'same here'
+
+messages.push(newMessages)
+
+alert(messages[3]) */
+
+// Count to ten!
+
+// We need to specify...
+
+// Where should we START counting?
+// Where is the FINISH line?
+// What's the STEP SIZE we should use?
+
+//    START           FINISH       STEP SIZE
+/* for ( let count = 10;  count < 21;  count += 1 )  {
+    
+  console.log(count)
+
+} */
+
+// creating a for loop
+// note: 'i' is conventionally used to represent 'count'
+
+// Create a for loop that counts from 10 to 100 in steps of 10
+// Use console.log to log out the numbers
+
+/* for (let i = 10; i < 101; i+=10) {
+  console.log(i)
+} */
+
+/* let cards = [7, 3, 9]
+for (let i = 0; i < cards.length; i++) {
+  console.log(cards)
+}
+
+for (let i = 0; i = sentence.length; i++) {
+  greetingEl.textContent += sentence[i] + " "
+} */
+
+// ex 7
+
+/*let player1Time = 102
+let player2Time = 107*/
+
+// cmd+d - ctrl+d to highlght and correct same words at same time
+
+/* function getFastestRaceTime() {
+    if (player1Time < player2Time) {
+        return player1Time
+    } else if (player2Time < player1Time) {
+        return player2Time
+    } else {
+        return player1Time
+    } 
+}*/ 
+
+// let fastestRace = getFastestRaceTime()
+// console.log(fastestRace)
+
+// Write a function that returns the total race time
+// Call/invoke the function and store the returned value in a new variable
+// Finally, log the variable out
+
+/* function getTotalRaceTime() {
+    return player1Time + player2Time
+}
+
+let totalTime = getTotalRaceTime()
+
+console.log(totalTime) */
+
+// ex 8 BlackJack (project) code. 
+
+// 2. Use getRandomCard() to set the values of firstCard and secondCard
+ /* let firstCard = getRandomCard()
+let secondCard = getRandomCard() */
+let cards = []
+let sum = 0 // firstCard + secondCard
+let hasBlackJack = false
+let isAlive = false
+let message = ""
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el") 
+
+// console.log(cards)
+
+// declaring an object
+// Objects - store data in-depth - composite / complex data type
+// key-value pairs
+let player = {
+  name: "Dannyswiss",
+  chips: 145
+}
+// methods are functions that are attached to objects
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
+
+// 1. Create a function, getRandomCard(), that always returns the number 5
+function getRandomCard() {
+
+  // Make this function return a random number between 1 and 13
+
+  /* let randomCard = Math.floor( Math.random() * 13 ) + 1
+  return randomCard */
+  // or simply
+  // return Math.floor( Math.random() * 13 ) + 1 // 1-13
+
+  // if 1     -> return 11
+    // if 11-13 -> return 10
+  let randomNumber = Math.floor( Math.random() * 13 ) + 1 // 1-13
+  if (randomNumber > 10) {
+    return 10
+  }else if (randomNumber === 1) {
+    return 11
+  }else {
+    return randomNumber
+  }
+
+}
+
+/* let randomCard = getRandomCard()
+console.log(randomCard)
+
+firstCard = randomCard
+console.log(firstCard)
+
+secondCard = randomCard
+console.log(secondCard) */
+
+
+
+function startGame() {
+  isAlive = true
+  // Generate two random numbers
+  let firstCard = getRandomCard()
+  let secondCard = getRandomCard()
+    // Re-assign the cards and sum variables so that the game can start
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard
+
+    renderGame()
+}
+
+function renderGame() {
+    cardsEl.textContent = "Cards: "
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " "
+    }
+    
+    sumEl.textContent = "Sum: " + sum
+    if (sum <= 20) {
+        message = "Do you want to draw a new card?"
+    } else if (sum === 21) {
+        message = "You've got Blackjack!"
+        hasBlackJack = true
+    } else {
+        message = "You're out of the game!"
+        isAlive = false
+    }
+    messageEl.textContent = message
+}
+
+
+function newCard() {
+  // Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+  if (isAlive === true && hasBlackJack === false) {
+    // 3. Use the getRandomCard() to set the value of card
+    let card = getRandomCard()
+    // card = randomCard
+    sum += card
+    cards.push(card)
+    console.log(cards)
+    renderGame()
+  }
+    
+}
+
+// ex 9(a) 
+// RANDOM NUMBERS GENERATION (Math.random)
+
+/* random numbers can be generated in javascript
+using the Math.random object declaring a variable
+say, randomNumber and setting equal to Math.random
+then console.log(randomNumber) will generate random
+number between 0 and 1, not inclusive of one.
+However, multiplying the declared variable by a number,
+outputs a random number between 0 and the number, but
+not inclusive of the number */
+
+/* let randomNumber = Math.random() * 6
+console.log(randomNumber) */
+
+// ex 10(b)
+// (Math.floor)
+/* Math.floor carrying a positive decimal number removes the
+decimal and outputs the integer alone */
+
+// let flooredNumber = Math.floor(3.45632)
+// console.log(flooredNumber)
+
+// ex 10(c)
+// Math.floor( Math.random() * 6 )
+/* declaring a variable with the 'Math.random() * 6 ' within ' Math.floor()'
+outputs random numbers between 0 and 5 and without any decimals */
+
+/* let randomNumber = Math.floor( Math.random() * 6 ) + 1
+console.log(randomNumber)
+
+let randomNumber2 = Math.floor( Math.random() * 6 ) + 1
+console.log(randomNumber2)
+
+function rollDice() {
+  let randomNumber3 = Math.floor( Math.random() * 6 ) + 1
+  return randomNumber3
+} */
+/* let rolDice = rollDice() 
+console.log(rollDice) */ // same as next code
+// console.log( rollDice() )
+
+
+// ex 11
+/* if (hasSolvedChallenge === false && hasHintsLeft === false) {
+  showSolution()
+}
+
+let likesDocumentaries = false
+let likesStartups = true
+if (likesDocumentaries === false || likesStartups === true) {
+    recommendMovie()
+} */
+
+let airBnbCastle = {
+  price: 160, title: 'Airbnb', free: false, facilities: ['swimming pool', 'lawn tennis', 'orchard'] 
+}
+console.log(airBnbCastle.facilities)
+console.log(airBnbCastle.price)
